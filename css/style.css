@@ -24,34 +24,16 @@
 
 /* Layout Style
   ========================================================================== */
-html {
-  box-sizing: border-box;
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: transparent;
-}
+html {}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #fff;
-  color: #414141;
-  font: 13px Tahoma, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  overflow-x: hidden;
-  max-width: 1920px;
-  margin: 0 auto;
-  position: relative;
-  word-break: break-word;
-  line-height: 1.5;
-  outline: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 12px/1.55 Arial, Verdana, Helvetica, sans-serif;
+  color: #595959;
+  text-align: center;
+  min-height: 100%;
 }
 a {
   color: #000000;
@@ -247,8 +229,28 @@ h1, h2, h3, h4, h5, h6 {
   right: -105px;
 }
 
+.wrapper {
+  min-height: 100%;
+}
+.page, .header, .header .header-topbar, .header h1.page-title {
+  background-color: #f1f1f1;
+}
+.page {
+  background: #f1f1f1;
+  min-height: 100%;
+}
+
 /* Header
   ========================================================================== */
-header {
-  
+.header-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 52;
+  display: block;
+}
+.header {
+  margin-left: 220px;
+  padding: 0 10px;
 }
