@@ -242,6 +242,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header
   ========================================================================== */
+.header {
+  margin-left: 220px;
+  padding: 0 10px;
+}
 .header-container {
   position: fixed;
   width: 100%;
@@ -250,7 +254,178 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 52;
   display: block;
 }
-.header {
-  margin-left: 220px;
-  padding: 0 10px;
+.header .header-bground {
+  background-color: #f1f1f1;
 }
+.header .header-sidebar {
+  width: 295px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(204, 204, 204, 0.54);
+  height: 100%;
+  padding: 0 20px;
+}
+.filterproducts-link {
+  display: none;
+}
+.header .logo {
+  text-decoration: none !important;
+  margin: 40px 0 30px 0;
+  display: block;
+}
+.header .logo strong {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.header .logo img {
+  height: 150px;
+  margin: 0 auto;
+}
+.box-scroll {
+  width: 100%;
+  margin-bottom: 45px;
+  min-height: 280px;
+}
+#mobnav {
+  display: none;
+  text-align: right;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #4e4d49;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: url(../images/mobnav-icon.png) right 6px no-repeat;
+  padding-right: 30px;
+  margin-right: 15px;
+}
+#nav li {
+  position: relative;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 5px;
+}
+#nav a {
+  color: #4e4d49;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+
+.header .form-search {
+  margin: 20px 0;
+  position: relative;
+}
+.header .form-search label {
+  text-align: left;
+  text-indent: -999em;
+  overflow: hidden;
+  display: none;
+}
+.header .form-search input.input-text {
+  float: left;
+  padding: 7px 10px;
+  border: 1px solid #c5c5c5;
+  width: 100%;
+  font-size: 12px;
+  color: #74736a;
+  background-color: transparent;
+}
+.header .form-search input.input-text {
+  color: #74736a;
+  border-color: #c5c5c5;
+}
+.header .form-search button.button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #fff;
+  padding-left: 5px;
+}
+
+.special_menu {
+  margin-top: 30px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.special_menu li {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+.special_menu li a {
+  margin-bottom: 5px;
+  color: #4e4d49;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -moz-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  -o-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.social-icons {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  text-align: center;
+}
+.social-icons a {
+  display: inline-block;
+  width: 25px;
+  height: 26px;
+  text-indent: -9999px;
+  margin-right: 7px;
+  transition: background 300ms ease-in-out;
+  -moz-transition: background 300ms ease-in-out;
+  -webkit-transition: background 300ms ease-in-out;
+  -o-transition: background 300ms ease-in-out;
+}
+.social-icons .facebook-icon {
+  background: url(../images/socialicons/facebook.png) no-repeat;
+  background-position: 0 0;
+}
+.social-icons .linkedin-icon {
+  background: url(../images/socialicons/linkedin.png) no-repeat;
+  background-position: 0 0;
+}
+.social-icons .flickr-icon {
+  background: url(../images/socialicons/flickr.png) no-repeat;
+  background-position: 0 0;
+}
+.social-icons .twitter-icon {
+  background: url(../images/socialicons/twitter.png) no-repeat;
+  background-position: 0 0;
+}
+.social-icons .googleplus-icon {
+  background: url(../images/socialicons/googleplus.png) no-repeat;
+  background-position: 0 0;
+}
+
+.copyrights {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+}
+
