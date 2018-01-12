@@ -418,6 +418,9 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../images/socialicons/googleplus.png) no-repeat;
   background-position: 0 0;
 }
+.social-icons a:hover {
+  background-position: 0 -34px;
+}
 
 .copyrights {
   position: absolute;
@@ -429,3 +432,71 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+
+.main-container {
+  margin-left: 220px;
+  padding: 79px 10px 0 10px;
+}
+.main {}
+.std, .footer-container {
+  display: none;
+}
+.page-title {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 25px;
+  display: none;
+}
+.page-title h1, .page-title h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #0a263c;
+  display: none;
+}
+.fullscreen-container {
+  width: 100% !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  height: 100%;
+}
+.more_info {
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 0 295px;
+}
+.links_categories {
+  background: rgba(204, 204, 204, 0.54);
+  padding: 13px 15px;
+}
+.link-pages li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  position: relative;
+}
+.circle {
+  background: #333;
+  color: #fff;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -18px;
+}
+.link-pages li img {
+  opacity: 0.5;
+}
+.link-pages li:hover img {
+  opacity: 1;
+}
