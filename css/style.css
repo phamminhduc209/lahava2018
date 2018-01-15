@@ -334,12 +334,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .form-search input.input-text {
   float: left;
-  padding: 7px 10px;
+  padding: 7px 23px 7px 10px;
   border: 1px solid #c5c5c5;
   width: 100%;
   font-size: 12px;
   color: #74736a;
-  background-color: transparent;
+  background-color: #ada8ad;
 }
 .header .form-search input.input-text {
   color: #74736a;
@@ -352,7 +352,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 5px;
   right: 5px;
-  background: #fff;
   padding-left: 5px;
 }
 
