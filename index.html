@@ -31,7 +31,6 @@
 	<![endif]-->
 </head>
 <body>
-
 	<div class="wrapper">
 		<div class="page">
 			<header class="header">
@@ -49,15 +48,36 @@
 							    <ul id="nav" class="default">
 							        <li class="level0">
 							        	<a href="#" title="">Áo dài</a>
+							        	<ul class="level0 submenu">
+											<li class="level1"><a href="#">Áo dài cưới</a></li>
+		                                    <li class="level1"><a href="#">Áo dài trung niên</a></li>
+		                                    <li class="level1"><a href="#">Áo dài nam</a></li>
+		                                    <li class="level1"><a href="#">Áo dài đi tiệc</a></li>
+										</ul>
 							        </li>
 							        <li class="level0">
 							        	<a href="#" title="">Váy dạ hội</a>
+							        	<ul class="level0 submenu">
+											<li class="level1"><a href="#">Váy dạ hội 1</a></li>
+		                                    <li class="level1"><a href="#">Váy dạ hội 1</a></li>
+		                                    <li class="level1"><a href="#">Váy dạ hội 1</a></li>
+										</ul>
 							        </li>
 							        <li class="level0">
 							        	<a href="#" title="">Váy cưới</a>
+							        	<ul class="level0 submenu">
+											<li class="level1"><a href="#">Váy cưới 1</a></li>
+		                                    <li class="level1"><a href="#">Váy cưới 1</a></li>
+		                                    <li class="level1"><a href="#">Váy cưới 1</a></li>
+										</ul>
 							        </li>
 							        <li class="level0">
 							        	<a href="#" title="">Thanh lý</a>
+							        	<ul class="level0 submenu">
+											<li class="level1"><a href="#">Thanh lý 1</a></li>
+		                                    <li class="level1"><a href="#">Thanh lý 1</a></li>
+		                                    <li class="level1"><a href="#">Thanh lý 1</a></li>
+										</ul>
 							        </li>
 							    </ul>
 							</div>
@@ -90,8 +110,8 @@
 						<div class="copyrights">LAHAVA © 2018  -  SINCE 2008</div>
 					</div>
 				</div>
-			</header><!-- /header -->
-			<div class=".main-container">
+			</header><!-- /.header -->
+			<div class="main-container">
 				<div class="main">
 					<div class="col-main">
 						<div class="std">
@@ -110,11 +130,11 @@
 							    <div class="links_categories clearfix">
 							    	<div class="pull-left">
 						    			<ul class="link-pages">
-						    				<li><a href="contact.html" title=""><img src="images/common/location.png" alt=""></a></li>
-						    				<li><a href="measure.html" title=""><img src="images/common/ruler.png" alt=""></a></li>
-						    				<li><img src="images/common/infomation.png" alt=""></li>
-						    				<li><a href="allhtml" title=""><img src="images/common/chat.png" alt=""></a></li>
-						    				<li>
+						    				<li data-toggle="tooltip" data-placement="top" title="Tooltip on top"><a href="contact.html" title=""><img src="images/common/location.png" alt=""></a></li>
+						    				<li data-toggle="tooltip" data-placement="top" title="Tooltip on top"><a href="measure.html" title=""><img src="images/common/ruler.png" alt=""></a></li>
+						    				<li data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="showRightsidebar"><img src="images/common/infomation.png" alt=""></li>
+						    				<li data-toggle="tooltip" data-placement="top" title="Tooltip on top"><a href="allhtml" title=""><img src="images/common/chat.png" alt=""></a></li>
+						    				<li data-toggle="tooltip" data-placement="top" title="Tooltip on top">
 						    					<a href="product_love.html" title="">
 						    						<span class="circle">15</span>
 						    						<img src="images/common/heart.png" alt="">
@@ -150,11 +170,30 @@
 													</ul>
 					    						</div>
 						    				</li>
-						    				<li>
-						    					VI
+						    				<li class="block-hotline">
+						    					<div class="parents">
+						    						<span>VI</span>
+						    						<ul class="dropdown">
+														<li>
+															<a href="" title="">
+																<span>EN</span>
+															</a>
+														</li>
+													</ul>
+						    					</div>
 						    				</li>
-						    				<li>
-						    					VNĐ
+						    				<li class="block-hotline">
+						    					<div class="parents">
+						    						<span>VNĐ</span>
+						    						<ul class="dropdown">
+														<li>
+															<a href="" title=>
+																<span>USD</span>
+															</a>
+														</li>
+													</ul>
+						    					</div>
+						    					
 						    				</li>
 						    				<li>
 						    					<a href="cart.html" title="">
@@ -169,7 +208,122 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div><!-- /.main-container -->
+
+			<div class="block-rightSidebar">
+				<div class="block-title">
+					<h2>Thông tin</h2>
+					<span class="fa fa-times"></span>
+				</div>
+				<div class="block-content">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#measure" aria-controls="measure" role="tab" data-toggle="tab">Số đo</a></li>
+						<li role="presentation"><a href="#service" aria-controls="service" role="tab" data-toggle="tab">Dịch vụ</a></li>
+						<li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Liên hệ</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="measure">
+							<div class="block-measure clearfix">
+								<div class="block-btnSwitch pull-left">
+									<div class="btn-group" id="status" data-toggle="buttons">
+										<label class="btn btn-default btn-on btn-sm active">
+										<input type="radio" value="1" name="multifeatured_module[module_id][status]" checked="checked">cm</label>
+										<label class="btn btn-default btn-off btn-sm ">
+										<input type="radio" value="0" name="multifeatured_module[module_id][status]">inches</label>
+									</div>
+								</div>
+								<a href="#" title="" class="hdlsd pull-right">Hướng dẫn lấy số đo</a>
+							</div>
+
+							<div class="content">
+								<div class="table-responsive">
+									<table class="table no-border">
+										<tr>
+											<th>Size</th>
+											<th>
+												Waist
+												(cm)
+											</th>
+											<th>
+												Hip
+												(cm)
+											</th>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+										</tr>
+									</table>
+								</div>
+								<hr>
+								<div class="table-responsive">
+									<table class="table no-border">
+										<tr>
+											<th>Size</th>
+											<th>
+												Chest
+												(cm)
+											</th>
+											<th>
+												Waist
+												(cm)
+											</th>
+											<th>
+												Hip
+												(cm)
+											</th>
+											<th>
+												
+											</th>
+										</tr>
+										<tr>
+											<td>32</td>
+											<td>60</td>
+											<td>86</td>
+											<td>86</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							
+						</div>
+						<div role="tabpanel" class="tab-pane" id="service">
+							
+						</div>
+						<div role="tabpanel" class="tab-pane" id="contact">
+							
+						</div>
+					</div>
+				</div>
+			</div><!-- /.rightSidebar -->
 		</div>
 	</div><!-- /wrapper -->
 
@@ -183,6 +337,11 @@
     <script src="lib/sticky/jquery.sticky.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 
 </body>
 </html>

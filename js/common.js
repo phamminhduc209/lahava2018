@@ -55,21 +55,24 @@
   $('.fixed').sticky({ topSpacing: 0 });
 
   /*
-   * 7. Main Menu
+   * 3. Show Right Sidebar
   */
-  $(".nav-toogle").on( 'click', function() {
-    $(this).toggleClass('has-open');
-    $(".menu").toggleClass("has-open");
-    $("body").toggleClass("menu-open");
-  });
+  $('.showRightsidebar').on('click', function() {
+    $(this).addClass('active');
+    $('body').addClass('Rightsidebar');
+    $('.block-rightSidebar').addClass('active');
+  })
+  $('.block-rightSidebar .block-title .fa-times').on('click', function() {
+    $('showRightsidebar').removeClass('active');
+    $('body').removeClass('Rightsidebar');
+    $('.block-rightSidebar').removeClass('active');
+  })
 
-  /*
-   * 7. Main Menu
-  */
+  /** Menu, Menu Mega Responsive **/
   $(document).ready(function(){
-    $('.menu ul li.parent').append('<span class="plus"></span>');
-    $('.menu ul li.parent .plus').click(function(){
-      $(this).toggleClass('open').siblings('.submenu').slideToggle();
+    $('#nav li a').click(function(){
+      $(this).parent().removeClass('open');
+      $(this).parent().toggleClass('open').siblings('.submenu').slideToggle();      
     });
   });
 
