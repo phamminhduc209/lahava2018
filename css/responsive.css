@@ -21,7 +21,7 @@
     position: absolute;
     top: 220px;
   }
-  #nav.default {
+  /*#nav.default {
     padding: 0 0 0 30px;
     display: block;
   }
@@ -37,13 +37,13 @@
     -moz-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
     -webkit-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
     -o-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-  }
+  }*/
 }
 @media only screen and (max-height: 800px) and (min-width: 1025px) {
   .box-scroll {
     position: static;
   }
-  #mobnav {
+  /*#mobnav {
     display: block;
     text-align: left;
     margin-left: 30px;
@@ -53,11 +53,17 @@
   }
   .nav-container #nav.default {
     display: none;
-  }
+  }*/
 }
 
 @media only screen and (min-height: 801px) and (min-width: 1025px) {
-  #nav.default, #nav.menutype2, #nav.megamenu {
+  /*#nav.default, #nav.menutype2, #nav.megamenu {
     display: block !important;
+  }*/
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    width: 920px;
   }
 }
