@@ -62,7 +62,7 @@
     $('body').addClass('Rightsidebar');
     $('.block-rightSidebar').addClass('active');
   })
-  $('.block-rightSidebar .block-title .fa-times').on('click', function() {
+  $('.block-rightSidebar .block-title .iconClose, .sidebar-overlay').on('click', function() {
     $('showRightsidebar').removeClass('active');
     $('body').removeClass('Rightsidebar');
     $('.block-rightSidebar').removeClass('active');
