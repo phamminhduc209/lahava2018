@@ -112,12 +112,13 @@
 					</div>
 				</div>
 			</header><!-- /.header -->
+
 			<div class="main-container">
 				<div class="col-main">
 					<div class="container">
 						<div class="row">
 							<div class="ban-ner">
-								<img src="images/2013222172416150.png" alt="">
+								<img src="images/ban-ner.png" alt="">
 							</div>
 							<div class="block-headerPage">
 								<h1 class="page-title">Áo dài cưới</h1>
@@ -137,13 +138,36 @@
 										</div>
 									</div>
 									<div class="col-sm-3 col-sm-12">
-										Filter giá
+		                                <div class="slider-range">
+		                                    <div id="slider-range"></div>
+		                                    <div class="action">
+		                                        <span id="amount-left"></span>
+		                                        <span id="amount-right"></span>
+		                                    </div>
+		                                </div>
 									</div>
 									<div class="col-sm-3 col-sm-12">
-										Filter mới
+										<div class="dropdown block-filter block-filter-option">
+											<p class="dropdown-toggle" data-toggle="dropdown">Sắp xếp<span class="caret"></span></p>
+											<ul class="dropdown-menu">
+												<li><a href="#">Mới nhất</a></li>
+												<li><a href="#">Giá từ thấp đến cao</a></li>
+												<li><a href="#">Giá từ cao xuống thấp</a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="col-sm-3 col-sm-12">
-										Filter 
+									<div class="col-sm-1 col-sm-12 pull-right">
+										<div class="icon-grid">
+											<a href="#" class="pull-right"><svg class="svg-drawing icon-size-grid " viewBox="0 0 330 330" version="1.1"><title></title><path id="XMLID_236_" d="M0,15v300c0,8.284,6.716,15,15,15h135V0H15C6.716,0,0,6.716,0,15z"></path><path id="XMLID_237_" d="M315,0H180v330h135c8.284,0,15-6.716,15-15V15C330,6.716,323.284,0,315,0z"></path></svg></a>
+
+											<a href="#" class="pull-right">
+												<svg class="svg-drawing icon-size-grid icon-grid-select" viewBox="0 0 330 330" version="1.1">
+													<title></title>
+													<path id="XMLID_236_" d="M0,15v300c0,8.284,6.716,15,15,15h135V0H15C6.716,0,0,6.716,0,15z"></path>
+													<path id="XMLID_237_" d="M315,0H180v330h135c8.284,0,15-6.716,15-15V15C330,6.716,323.284,0,315,0z"></path>
+												</svg>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div><!-- /.header-filter -->
@@ -153,9 +177,9 @@
 									<li class="col-sm-4 col-xs-12">
 										<div class="product-item">
 											<div class="product-image-area">
-												<ul class="owl-carousel slide-product" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
-													<li><img src="images/product/lad187.jpg" alt=""></li>
-													<li><img src="images/product/lad187b.jpg" alt=""></li>
+												<ul class="owl-carousel slide-product dotsData" data-dots="true" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
+													<li data-dot="1"><img src="images/product/lad187.jpg" alt=""></li>
+													<li data-dot="2"><img src="images/product/lad187b.jpg" alt=""></li>
 												</ul>
 												<div class="sale-product-icon">Sale</div>
 												<p class="addon addon-heart">
@@ -186,9 +210,9 @@
 									<li class="col-sm-4 col-xs-12">
 										<div class="product-item">
 											<div class="product-image-area">
-												<ul class="owl-carousel slide-product" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
-													<li><img src="images/product/lad188.jpg" alt=""></li>
-													<li><img src="images/product/lad188b.jpg" alt=""></li>
+												<ul class="owl-carousel slide-product dotsData" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
+													<li data-dot="1"><img src="images/product/lad188.jpg" alt=""></li>
+													<li data-dot="1"><img src="images/product/lad188b.jpg" alt=""></li>
 												</ul>
 												<div class="sale-product-icon">Sale</div>
 												<p class="addon addon-heart">
@@ -219,9 +243,9 @@
 									<li class="col-sm-4 col-xs-12">
 										<div class="product-item">
 											<div class="product-image-area">
-												<ul class="owl-carousel slide-product" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
-													<li><img src="images/product/lad178.jpg" alt=""></li>
-													<li><img src="images/product/lad178a.jpg" alt=""></li>
+												<ul class="owl-carousel slide-product dotsData" data-nav="true" data-margin="0" data-items='1' data-autoplayTimeout="700" data-autoplay="false" data-loop="true">
+													<li data-dot="1"><img src="images/product/lad178.jpg" alt=""></li>
+													<li data-dot="1"><img src="images/product/lad178a.jpg" alt=""></li>
 												</ul>
 												<div class="sale-product-icon">Sale</div>
 												<p class="addon addon-heart">
@@ -386,6 +410,7 @@
 					</div><!-- /.fullscreen-container -->
 				</div><!-- /.col-main -->
 			</div><!-- /.main-container -->
+
 			<div class="block-rightSidebar">
 				<div class="sidebar-content block-content-option">
 					<div class="block-title">
@@ -631,6 +656,7 @@
 
 	<!-- ===== JS ===== -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui-1.9.2.min.js"></script>
 	<!-- ===== JS Bootstrap ===== -->
 	<script src="lib/bootstrap/bootstrap.min.js"></script>
 	<!-- carousel -->
@@ -644,6 +670,30 @@
 			$('[data-toggle="tooltip"]').tooltip()
 		})
 	</script>
+
+	<script>
+
+        (function($) {
+            "use strict";
+
+            /*  [ Filter by price ]
+            - - - - - - - - - - - - - - - - - - - - */
+            $('#slider-range').slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [0, 250],
+                slide: function (event, ui) {
+                    $('#amount-left').text(ui.values[0] + ' Vnd');
+                    $('#amount-right').text(ui.values[1] + ' Vnd');
+                }
+
+            });
+            $('#amount-left').text($('#slider-range').slider('values', 0) + ' Vnd');
+            $('#amount-right').text($('#slider-range').slider('values', 1) + ' Vnd');
+        })(jQuery);
+
+    </script>
 
 </body>
 </html>
