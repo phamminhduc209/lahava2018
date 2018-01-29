@@ -121,3 +121,23 @@
     margin-top: 30px;
   }
 }
+
+@media (max-width: 667px) {
+  .show-menu,
+  .block-adside {
+    width: 20%;
+  }
+  .header-mobile .logo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .show-menu,
+  .block-adside {
+    width: 25%;
+  }
+  .header-mobile .logo {
+    width: 50%;
+  }
+}
