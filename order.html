@@ -34,9 +34,34 @@
 	<div class="sidebar-overlay"></div>
 	<div class="wrapper">
 		<div class="page">
+			
+			<div class="header-mobile clearfix">
+				<p class="show-menu">
+					<i class="fa fa-bars" aria-hidden="true"></i> Menu
+				</p>
+				<h2 class="logo">
+					<a href="index.html" title="LAHAVA Home">
+                    	<img src="images/logo.png" alt="">
+                	</a>
+            	</h2>
+        		<div class="block-adside">
+        			<a href="product_love.html" title="">
+						<span class="circle">15</span>
+						<img src="images/common/heart.png" alt="">
+					</a>
+					<a href="cart.html" title="">
+						<span class="circle">15</span>
+						<img src="images/common/bag.png" alt="">
+					</a>
+        		</div>
+			</div><!-- /.header-mobile -->
+
 			<header class="header">
 				<div class="header-container">
 					<div class="header-sidebar">
+						<span class="iconClose-sidebar">
+							<img src="images/common/close2.png" alt="">
+						</span>
 						<h1 class="logo">
 							<strong>LAHAVA Home</strong>
 							<a href="index.html" title="LAHAVA Home" class="logo">
@@ -116,85 +141,132 @@
 			<div class="main-container">
 				<div class="col-main">
 					<div class="container">
-						<h1 class="page_title">Nhập thông tin</h1>
-						<form class="form-horizontal block-form">
-						    <div class="form-group">
-						        <label class="col-sm-2 control-label">Họ Tên <span class="required">*</span></label>
-						        <div class="col-sm-6">
-						            <input type="email" class="form-control" placeholder="Họ Tên">
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="col-sm-2 control-label">Điện thoại <span class="required">*</span></label>
-						        <div class="col-sm-6">
-						            <input type="email" class="form-control" placeholder="Điện thoại">
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="col-sm-2 control-label">Email</label>
-						        <div class="col-sm-6">
-						            <input type="email" class="form-control" placeholder="Chúng tôi thường trả lời qua Email">
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="col-sm-2 control-label">Địa chỉ</label>
-						        <div class="col-sm-6">
-						            <input type="email" class="form-control" placeholder="Nhập địa chỉ nhận hàng">
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="col-sm-12 control-label">Hình ảnh đính kèm (nếu có)</label>
-						    </div>
-						    <div class="form-group">
-							    <div class="col-sm-12">
-							    	<p class="text-red" style="padding-top: 5px; padding-bottom: 5px;">(Bạn có thể tải 16 ảnh và mỗi ảnh dung lượng không quá 4mb!)</p>
-									<div class="clearfix show-image">
-										<ul>
-											<li>
-												<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
-		                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
-		                      					</div>
-											</li>
-											<li>
-												<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
-		                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
-		                      					</div>
-											</li>
-											<li>
-												<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
-		                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
-		                      					</div>
-											</li>
-											<li>
-												<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
-		                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
-		                      					</div>
-											</li>
-											<li>
-												<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;"">
-		                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
-		                      					</div>
-											</li>
-											<li>
-												<input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple="">
-												<label for="file-6"></label>
-											</li>
-										</ul>
-									</div>
+						<div class="block-main">
+							<h1 class="page_title">Nhập thông tin</h1>
+							<form class="form-horizontal block-form">
+							    <div class="form-group">
+							        <label class="col-sm-2 control-label">Họ Tên <span class="required">*</span></label>
+							        <div class="col-sm-6">
+							            <input type="email" class="form-control" placeholder="Họ Tên">
+							        </div>
 							    </div>
+							    <div class="form-group">
+							        <label class="col-sm-2 control-label">Điện thoại <span class="required">*</span></label>
+							        <div class="col-sm-6">
+							            <input type="email" class="form-control" placeholder="Điện thoại">
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <label class="col-sm-2 control-label">Email</label>
+							        <div class="col-sm-6">
+							            <input type="email" class="form-control" placeholder="Chúng tôi thường trả lời qua Email">
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <label class="col-sm-2 control-label">Địa chỉ</label>
+							        <div class="col-sm-6">
+							            <input type="email" class="form-control" placeholder="Nhập địa chỉ nhận hàng">
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <label class="col-sm-12 control-label">Hình ảnh đính kèm (nếu có)</label>
+							    </div>
+							    <div class="form-group">
+								    <div class="col-sm-12">
+								    	<p class="text-red" style="padding-top: 5px; padding-bottom: 5px;">(Bạn có thể tải 16 ảnh và mỗi ảnh dung lượng không quá 4mb!)</p>
+										<div class="clearfix show-image">
+											<ul>
+												<li>
+													<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
+			                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
+			                      					</div>
+												</li>
+												<li>
+													<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
+			                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
+			                      					</div>
+												</li>
+												<li>
+													<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
+			                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
+			                      					</div>
+												</li>
+												<li>
+													<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;">
+			                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
+			                      					</div>
+												</li>
+												<li>
+													<div class="register-avata" style="background: url('images/blog/adme.jpg') no-repeat scroll 0% 0%; background-color: transparent; background-size: 94px 94px;"">
+			                      						<a href="javascript:void(0)" class="upload-item-delete"></a>
+			                      					</div>
+												</li>
+												<li>
+													<input type="file" name="file-6[]" id="file-6" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple="">
+													<label for="file-6"></label>
+												</li>
+											</ul>
+										</div>
+								    </div>
+								</div>
+								<div class="form-group">
+							        <label class="col-sm-2 control-label">Ghi chú</label>
+							        <div class="col-sm-6">
+							            <textarea name="" cols="" rows="10" class="form-control" placeholder="" style="max-width: 100%;"></textarea>
+							        </div>
+							    </div>
+							    <div class="form-group">
+							        <div class="col-sm-offset-2 col-sm-6">
+							            <button type="submit" class="btn btn-default pull-right">Gửi</button>
+							        </div>
+							    </div>
+							</form>
+						</div>
+						<footer class="footer">
+							<div class="page-footer-newsletter">
+								<div class="newsletter-title">Hãy là người đầu tiên biết ...</div>
+								<div class="newsletter-subtitle">Các chương trình khuyến mãi, bộ sưu tập mới và các phần quà tặng từ chúng tôi</div>
+								<div class="newsletter-form">
+									<form action="#" id="nesletterForm">
+										<div class="newsletter-input-and-submit">
+											<div class="newsletter-input-container">
+												<input type="text" class="newsletter-input" name="newsletterEmail" tabindex="1" value="" placeholder="Email address">
+											</div>
+											<div class="newsletter-submit-container">
+												<div class="newsletter-button newsletter-submit">
+													<svg class="svg-drawing send-symbol" viewBox="0 0 50 28"><g><polygon id="Shape" points="23.4864 25.319 13.6293818 17.79 14.8797091 16.21 23.3499636 22.681 43.7614545 3.505 5.65803636 9.597 10.7733818 13.186 9.59025455 14.814 0.451054545 8.403 49.9112727 0.495"></polygon><polygon id="Shape" points="9.16363636 27.804 9.16363636 14.292 44.4609455 2.057 45.1390545 3.943 11.2 15.708 11.2 24.196 17.7876364 20.152 18.8669091 21.848"></polygon></g></svg>
+													<span class="button-text">Sign up</span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div><!-- /.container -->
+							<div class="page-footer-links">
+								<div class="row">
+									<div class="col-sm-6 col-xs-6">
+										<div class="block-address">
+											<p>84 Nguyễn Văn Trỗi, Phường 8, Phú Nhuận, HCM</p>
+											<p>
+												<a href="mailto:lananhthoitrang@gmail.com">lananhthoitrang@gmail.com</a>
+											</p>
+											<p>
+												<a href="tel:0286277277" title="">(028)6 277277</a>
+												-
+												<a href="tel:0942926456" title="">0942 926 456</a>
+											</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6">
+										<div class="block-timework text-right">
+											<p>T2-T7 : 9:00 - 21:00</p>
+											<p>Chủ nhật : 9:00 - 19:00</p>
+											<p>Nghỉ trưa : 12:00 - 13:00</p>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="form-group">
-						        <label class="col-sm-2 control-label">Ghi chú</label>
-						        <div class="col-sm-6">
-						            <textarea name="" cols="" rows="10" class="form-control" placeholder="" style="max-width: 100%;"></textarea>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <div class="col-sm-offset-2 col-sm-6">
-						            <button type="submit" class="btn btn-default pull-right">Gửi</button>
-						        </div>
-						    </div>
-						</form>
+						</footer>
 					</div><!-- /.container -->
 
 					<div class="fullscreen-container">
