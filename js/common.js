@@ -57,11 +57,18 @@
   /*
    * 3. Show Right Sidebar
   */
-  $('.showRightsidebar').on('click', function() {
+  $('.Sidebar_Tab').on('click', function() {
     $(this).addClass('active');
     $('body').addClass('Rightsidebar');
-    $('.block-rightSidebar').addClass('active');
+    $('#showSidebar_Tab').addClass('active');
   })
+
+  $('.Sidebar_Card').on('click', function() {
+    $(this).addClass('active');
+    $('body').addClass('Rightsidebar');
+    $('#showSidebar_Card').addClass('active');
+  })
+
   $('.block-rightSidebar .block-title .iconClose, .sidebar-overlay').on('click', function() {
     $('showRightsidebar').removeClass('active');
     $('body').removeClass('Rightsidebar');

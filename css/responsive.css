@@ -22,11 +22,17 @@
 
 @media only screen and (min-height: 801px) and (min-width: 1025px) {}
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1366px) {
   .container {
     width: 920px;
   }
 }
+
+/*@media only screen and (min-width: 1200px) {
+  .container {
+    width: 750px;
+  }
+}*/
 
 @media only screen and (max-width: 1024px) {
   .header-mobile {
@@ -113,6 +119,10 @@
 
   .block-adside .circle {
     top: -7px;
+  }
+
+  .products .slide-product .owl-dots {
+    display: block;
   }
 }
 
