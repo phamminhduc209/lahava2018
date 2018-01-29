@@ -89,4 +89,17 @@
   $('.panel-group').on('hidden.bs.collapse', toggleIcon);
   $('.panel-group').on('shown.bs.collapse', toggleIcon);
 
+  /*  [ Main Menu ]
+  - - - - - - - - - - - - - - - - - - - - */
+  $(".header-mobile .show-menu").on( 'click', function() {
+    $(this).toggleClass('has-open');
+    $('.header .header-sidebar').toggleClass("has-open");
+    $('body').toggleClass("sidebar-open");
+  });
+  $(".header-sidebar .iconClose-sidebar").on( 'click', function() {
+    $('.header-mobile .show-menu').removeClass('has-open');
+    $(".header .header-sidebar").removeClass("has-open");
+    $("body").removeClass("sidebar-open");
+  });
+
 })(jQuery); // End of use strict
