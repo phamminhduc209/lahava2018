@@ -35,12 +35,19 @@
 }*/
 
 @media only screen and (max-width: 1024px) {
+
+  .pageChild .main-container {
+    padding-bottom: 15px;
+  }
+
   .header-mobile {
     display: block;
   }
 
   .header .header-sidebar {
     left: -100%;
+    width: 300px;
+    top: 60px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -51,6 +58,11 @@
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+  }
+
+  .home .header .header-sidebar {
+    background: #fff;
+    top: 60px;
   }
 
   .header-sidebar.has-open .iconClose-sidebar {
@@ -87,7 +99,7 @@
     content: "";
     display: block;
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -124,6 +136,76 @@
   .products .slide-product .owl-dots {
     display: block;
   }
+
+  /*.ban-ner {
+    margin-right: -15px;
+    margin-left: -15px;
+  }*/
+
+  .footer {
+    border-top: none;
+    margin-top: 50px;
+  }
+
+  .menuAllsp {
+    display: block;
+  }
+
+  .page-footer-links {
+    display: none;
+  }
+
+  .block-address-mb .social-icons {
+    position: relative;
+    bottom: 0;
+  }
+
+  .header .header-sidebar:after {
+    display: none;
+  }
+
+  .header .logo {
+    display: none;
+  }
+
+  #search_mini_form {
+    display: none;
+  }
+
+  .box-scroll {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .special_menu {
+    margin-top: 15px;
+  }
+  .social-iconsdk {
+    display: none;
+  }
+
+  .header .block-address-mb,
+  .block-addmb,
+  .special_menu_mb,
+  .header .newsletter-form,
+  .block-address-mb,
+  .block-menumb-fixed {
+    display: block;
+  }
+
+  .sale-product-icon {
+    top: 30px;
+  }
+
+  .icon-grid {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -137,8 +219,35 @@
   .block-adside {
     width: 20%;
   }
+
   .header-mobile .logo {
     width: 60%;
+  }
+}
+
+@media (max-width: 414px) {
+  .page-footer-newsletter .newsletter-input-container {
+    width: 250px;
+  }
+
+  .block-menumb-fixed .block-title {
+    display: block;
+  }
+
+  .block-menumb-fixed ul {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .block-menumb-fixed ul.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .block-menumb-fixed ul li {
+    display: block;
   }
 }
 
@@ -147,7 +256,14 @@
   .block-adside {
     width: 25%;
   }
+
   .header-mobile .logo {
     width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-footer-newsletter .newsletter-input-container {
+    width: 155px;
   }
 }
