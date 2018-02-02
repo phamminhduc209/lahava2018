@@ -47,7 +47,7 @@
   .header .header-sidebar {
     left: -100%;
     width: 300px;
-    top: 60px;
+    top: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -62,7 +62,7 @@
 
   .home .header .header-sidebar {
     background: #fff;
-    top: 60px;
+    top: 0;
   }
 
   .header-sidebar.has-open .iconClose-sidebar {
@@ -99,7 +99,7 @@
     content: "";
     display: block;
     position: fixed;
-    top: 60px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -136,11 +136,6 @@
   .products .slide-product .owl-dots {
     display: block;
   }
-
-  /*.ban-ner {
-    margin-right: -15px;
-    margin-left: -15px;
-  }*/
 
   .footer {
     border-top: none;
@@ -200,6 +195,10 @@
   .icon-grid {
     display: none;
   }
+
+  .hidedesktop {
+    display: block;
+  }
 }
 
 @media (max-width: 992px) {
@@ -238,12 +237,14 @@
     height: 0;
     opacity: 0;
     visibility: hidden;
+    display: none;
   }
 
   .block-menumb-fixed ul.active {
     height: auto;
     opacity: 1;
     visibility: visible;
+    display: block;
   }
 
   .block-menumb-fixed ul li {

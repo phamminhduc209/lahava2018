@@ -52,7 +52,11 @@
   /*
    * 3. Sticky Menu
   */
-  $('.header-mobile-sticky').sticky({ topSpacing: 0 });
+  $('.header-mobile-sticky').sticky({
+    topSpacing: 0,
+    responsiveWidth: true,
+    wrapperClassName: 'hidedesktop',
+  });
 
   /*
    * 3. Show Right Sidebar
