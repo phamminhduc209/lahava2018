@@ -86,11 +86,12 @@
     display: block;
     width: 100%;
     background: #fff;
-    padding: 15px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
   }
 
   .show-menu {
-    font-size: 20px;
+    font-size: 18px;
     float: left;
     width: 10%
   }
@@ -112,7 +113,8 @@
     width: 80%;
   }
   .header-mobile .logo img {
-    margin: 0 auto;
+    margin: 5px auto 0;
+    width: 50%;
   }
 
   .block-adside {
@@ -120,11 +122,14 @@
     width: 10%;
     text-align: right;
   }
+
   .block-adside a {
     display: inline-block;
     position: relative;
     margin-right: 15px;
+    /*margin-top: 5px;*/
   }
+  
   .block-adside a:last-child {
     margin-right: 0;
   }
@@ -283,8 +288,12 @@
   }
 }
 
-@media (max-width: 320px) {s
+@media (max-width: 320px) {
   .show-menu {
     font-size: 17px;
+  }
+
+  .header-mobile .logo img {
+    width: 70%;
   }
 }
