@@ -260,11 +260,13 @@
     margin-left: 0;
   }
 
-  .product-img-box__mobile .product-img-box .item img {
+  .product-img-box__mobile .product-img-box .item {
+    position: relative;
+    overflow: hidden;
     margin-bottom: 15px;
   }
 
-  .product-img-box__mobile .product-img-box .item:last-child img {
+  .product-img-box__mobile .product-img-box .item:last-child {
     margin-bottom: 0;
   }
 }

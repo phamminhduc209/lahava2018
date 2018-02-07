@@ -123,10 +123,6 @@
     $('.home .owl-carousel .owl-item').css({"height": resizeHeight, "width": "auto"});
   });
 
-  // $(window).click(function() {
-  //   $('.block-menumb-fixed .block-title.active').removeClass('active');
-  // })
-
   $('.block-menumb-fixed .block-title').on('click', function() {
     $(this).toggleClass('open');
     $(this).parent().find('ul').toggleClass('active');
