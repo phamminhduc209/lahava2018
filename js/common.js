@@ -134,3 +134,16 @@
   });
 
 })(jQuery); // End of use strict
+
+// Function get size image set for 
+var Simg = 0;
+function widthImg() {
+  Simg = $('.product-img-box__mobile .item img').width(); 
+  $('.product-img-box__mobile').css({'width': Simg});
+}
+widthImg();
+$(window).resize(function() {
+  $('.product-img-box__mobile').css({'width': ''});
+  widthImg();
+  console.log('aaaa');
+});
