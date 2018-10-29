@@ -145,5 +145,4 @@ widthImg();
 $(window).resize(function() {
   $('.product-img-box__mobile').css({'width': ''});
   widthImg();
-  console.log('aaaa');
 });
