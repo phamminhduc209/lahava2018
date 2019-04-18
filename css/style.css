@@ -2293,7 +2293,7 @@ ul.decimal-list>li, ol.decimal-list>li {
   color: #aaa;
 }
 /* hover style just for information */
-label:hover:before {
+.checkboxStyle label:hover:before {
   border: 2px solid #989898!important;
 }
 
@@ -3069,34 +3069,11 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
   color: #2D94B7;
 }
 /* .home .block-menumb-fixed { display: none; } */
-.star {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: .9em;
-  margin-right: .9em;
-  margin-bottom: 1.2em;
-  border-right:  .3em solid transparent;
-  border-bottom: .7em  solid #000;
-  border-left:   .3em solid transparent;
-  font-size: 12px;
+.ttl-star i {
+  font-size: 18px;
 }
-.star:before, .star:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: .6em;
-  left: -1em;
-  border-right:  1em solid transparent;
-  border-bottom: .7em  solid #000;
-  border-left:   1em solid transparent;
-  transform: rotate(-35deg);
-} 
-.star:after {  
-  transform: rotate(35deg);
+.block-form-evaluate .block-form {
+  padding-top: 15px;
 }
 .btn-write-evaluate {
   border: 1px solid #000;
@@ -3106,10 +3083,13 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
   text-transform: uppercase;
   cursor: pointer;
 }
+.list-comment {
+  margin: 15px 0 30px;
+}
 .list-comment ul li {
   border-top: 1px solid #000;
   list-style-type: none;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-top: 20px;
 }
 .list-comment li h3 .name {
@@ -3119,12 +3099,14 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
 .list-comment li h3 .date {
   font-size: 14px;
 }
-.list-comment .ratingStar .star {
-  font-size: 8px;
-  margin: 0 5px 0;
+.list-comment .ratingStar {
+  margin-top: 10px;
+}
+.list-comment .ratingStar i {
+  font-size: 16px;
 }
 .list-comment .comment {
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-size: 14px;
   line-height: 1.5;
@@ -3141,3 +3123,46 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
 .list-comment .images a:last-child {
   margin-right: 0;
 }
+.products-comment {
+  margin-top: 20px;
+}
+.products-comment .ttl {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.products-comment .ttl small {
+  font-size: 90%;
+  font-weight: normal;
+}
+.products .list-comment ul li {
+  margin-top: 0;
+}
+.rating { 
+  border: none;
+  float: left;
+}
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 20px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+.rating > label { 
+  color: #ddd; 
+  float: right; 
+}
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #000;  } /* hover previous stars in list */
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #000;  } 

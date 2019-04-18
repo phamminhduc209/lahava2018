@@ -235,66 +235,85 @@
                 <div class="col-main">
                     <div class="container">
                         <div class="block-main">
-                            <div class="text-center">
-                                <p>
-                                    <i class="star"></i>
-                                    <i class="star"></i>
-                                    <i class="star"></i>
-                                    <i class="star"></i>
-                                    <i class="star"></i>
-                                </p>
-                                <span>(108 Đánh giá)</span>
-                            </div>
                             <div class="evaluate-content">
+                                <div class="text-center">
+                                    <p class="ttl-star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </p>
+                                    <span>(108 Đánh giá)</span>
+                                </div>
                                 <div class="block-form-evaluate">
-                                    <p><a  class="btn-write-evaluate">Viết đánh giá</a></p>
-                                    <form class="form-horizontal block-form hidden" method="POST" action="" id="frmSodo">
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Họ Tên <span class="required">*</span></label>
-                                            <div class="col-sm-6">
-                                                <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Họ Tên" value="">
+                                    <p><a class="btn-write-evaluate" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Viết đánh giá</a></p>
+                                    <div class="collapse" id="collapseExample">
+                                        <form class="form-horizontal block-form" method="POST" action="" id="">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Họ Tên <span class="required">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Họ Tên" value="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Điện thoại <span class="required">*</span></label>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control" placeholder="Điện thoại" id="phone" name="phone" value="">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Điện thoại <span class="required">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" placeholder="Điện thoại" id="phone" name="phone" value="">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Email <span class="required">*</span></label>
-                                            <div class="col-sm-6">
-                                                <input type="email" name="email" class="form-control" id="email" value="" placeholder="Chúng tôi thường trả lời qua Email">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Email <span class="required">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" name="email" class="form-control" id="email" value="" placeholder="Chúng tôi thường trả lời qua Email">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-12 control-label">Hình ảnh đính kèm (nếu có)</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-12">
-                                                <div class="clearfix show-image">
-                                                    <div>
-                                                        <input type="file" id="file-image" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple="">
-                                                        <label for="file-image">Chọn hình</label>
-                                                        <div class="clearfix" style="margin-top:5px"></div>
-                                                        <div id="div-image" class="clearfix show-image">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Sao <span class="required">*</span></label>
+                                                <div class="col-sm-6">
+                                                    <fieldset class="rating">
+                                                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-12 control-label">Hình ảnh đính kèm (nếu có)</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <div class="clearfix show-image">
+                                                        <div>
+                                                            <input type="file" id="file-image" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple="">
+                                                            <label for="file-image">Chọn hình</label>
+                                                            <div class="clearfix" style="margin-top:5px"></div>
+                                                            <div id="div-image" class="clearfix show-image">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label">Nội dung</label>
-                                            <div class="col-sm-6">
-                                                <textarea name="content" cols="" rows="10" class="form-control" placeholder="" style="max-width: 100%;" id="content"></textarea>
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Nội dung</label>
+                                                <div class="col-sm-6">
+                                                    <textarea name="content" cols="" rows="10" class="form-control" placeholder="" style="max-width: 100%;" id="content"></textarea>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-offset-2 col-sm-6">
-                                                <button type="button" id="btnNext" class="btn btn-default pull-right">Gửi</button>
+                                            <div class="text-center clearfix">
+                                                <div class="col-sm-offset-2 col-sm-6">
+                                                    <button type="button" id="btnNext" class="btn btn-default pull-right">Gửi</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="list-comment">
                                     <ul>
@@ -304,11 +323,11 @@
                                                 <span class="date">May 23, 2019</span>
                                             </h3>
                                             <div class="ratingStar">
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="comment">
                                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -334,11 +353,11 @@
                                                 <span class="date">May 23, 2019</span>
                                             </h3>
                                             <div class="ratingStar">
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="comment">
                                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -364,11 +383,11 @@
                                                 <span class="date">May 23, 2019</span>
                                             </h3>
                                             <div class="ratingStar">
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="comment">
                                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -394,11 +413,11 @@
                                                 <span class="date">May 23, 2019</span>
                                             </h3>
                                             <div class="ratingStar">
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="comment">
                                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -424,11 +443,11 @@
                                                 <span class="date">May 23, 2019</span>
                                             </h3>
                                             <div class="ratingStar">
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
-                                                <i class="star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="comment">
                                                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
@@ -959,7 +978,6 @@
         $('[data-fancybox="images"]').fancybox({
             afterLoad : function(instance, current) {
                 var pixelRatio = window.devicePixelRatio || 1;
-
                 if ( pixelRatio > 1.5 ) {
                     current.width  = current.width  / pixelRatio;
                     current.height = current.height / pixelRatio;
