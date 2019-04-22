@@ -1472,7 +1472,7 @@ ul.decimal-list>li, ol.decimal-list>li {
   white-space: nowrap;
 }
 
-.product-options .option .requi#000 em {
+.product-options .option .required em {
   color: #eb340a;
 }
 
@@ -2001,7 +2001,7 @@ ul.decimal-list>li, ol.decimal-list>li {
   text-transform: uppercase;
 }
 
-.block-form .control-label .requi#000 {
+.block-form .control-label .required {
   color: #f50504;
 }
 
