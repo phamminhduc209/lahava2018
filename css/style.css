@@ -3069,6 +3069,31 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
   color: #2D94B7;
 }
 /* .home .block-menumb-fixed { display: none; } */
+.ttl-star .rating {
+  float: none;
+  max-width: 145px;
+  margin: 0 auto;
+  position: relative;
+}
+.ttl-star .rating:before {
+  content: "";
+  background: transparent;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.ttl-star .rating label {
+  margin-bottom: 0;
+  pointer-events: none;
+}
+.ttl-star .rating label:before {
+  margin: 0 5px;
+}
 .ttl-star i {
   font-size: 18px;
 }
