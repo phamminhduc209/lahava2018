@@ -3069,33 +3069,9 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
   color: #2D94B7;
 }
 /* .home .block-menumb-fixed { display: none; } */
-.ttl-star .rating {
-  float: none;
-  max-width: 145px;
-  margin: 0 auto;
+.ttl-star {
+  margin: 0 auto 5px;
   position: relative;
-}
-.ttl-star .rating:before {
-  content: "";
-  background: transparent;
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-}
-.ttl-star .rating label {
-  margin-bottom: 0;
-  pointer-events: none;
-}
-.ttl-star .rating label:before {
-  margin: 0 5px;
-}
-.ttl-star i {
-  font-size: 18px;
 }
 .block-form-evaluate .block-form {
   padding-top: 15px;
@@ -3191,3 +3167,52 @@ display: block;position: relative;height: 35px;line-height: 38px;width: 100%;tex
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #000;  } 
+
+
+.stars-svg {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.stars-svg .rating-result, .stars-svg .rating-result.lit .ss-halfstar+.ss-star, .stars .rating-result, .stars .rating-result.lit .ss-halfstar+.ss-star {
+  color: #E1E3DF !important;
+}
+.stars-svg .rating-result {
+  font-size: 0;
+  color: #757575;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+}
+.stars-svg .rating-result.lit, .stars .rating-result.lit {
+  color: #222 !important;
+}
+.block-form .stars-svg .rating-result:hover, .block-form .stars .rating-result:hover {
+  color: #222 !important;
+}
+.stars-svg .rating-result.lit {
+  color: #FFA300;
+}
+.etsy-icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  vertical-align: middle;
+  width: 24px;
+}
+.stars-svg .etsy-icon {
+  height: 18px;
+  width: 18px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.etsy-icon svg {
+  display: block;
+}
+.stars-svg .stars-svg-half-star .background {
+  fill: #757575;
+}
+.stars-svg .stars-svg-half-star .background, .stars .stars-svg-half-star .background {
+  fill: #E1E3DF !important;
+}
